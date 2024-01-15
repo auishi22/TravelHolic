@@ -1,7 +1,9 @@
 /* shared style */
+body{
+    max-width: 1170px;
+}
 * {
     font-family: 'Mulish', sans-serif;
-    max-width: 1170px;
     margin: auto;
 }
 
@@ -47,7 +49,20 @@ nav li {
     font-weight: 800;
     margin-left: 16px;
 }
-
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    left: 90%;
+    top: 47px;
+}
+.burger .line{
+    width: 33px;
+    background-color: black;
+    height: 6px;
+    margin: 5px 3px;
+    border-radius: 3px;
+}
 /* banner styling */
 .banner {
     background: linear-gradient(to bottom, rgb(19, 19, 24, 0.80), transparent), url('../Images/Group\ 13\ \(1\)\ \(1\).png');
@@ -78,6 +93,7 @@ nav li {
 }
 
 .banner-menu input{
+    width: 80px;
     border-radius: 8px;
     background: #FFF;
     border: 0px;
@@ -94,4 +110,48 @@ nav li {
 }
 .banner-menu .btn-primary i{
     margin-right: 8px;
+}
+
+/* mobile responsive */
+@media screen and (max-width: 600px) {
+    *{
+        margin: auto;
+    }
+    body{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    nav{
+        margin: 20px;
+    }
+    .banner{
+       width: 100%;
+       height: 500px;
+       margin: 20px;
+    }
+    .banner-title{
+        font-size: 22px;
+        margin-bottom: 8px;
+        padding-top: 32px;
+    }
+    .description{
+        font-size: 14px;
+        margin: 10px 10px;
+        text-align: center;
+
+    }
+    .banner-menu{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 16px;
+        margin: 0px 24px 32px;
+    }
+    .banner-menu input{
+        width: 180px;
+    }
 }
