@@ -53,7 +53,7 @@ nav li {
     display: none;
     position: absolute;
     cursor: pointer;
-    left: 90%;
+    left: 86%;
     top: 47px;
 }
 .burger .line{
@@ -92,12 +92,15 @@ nav li {
     margin-bottom: 106px;
 }
 
-.banner-menu input{
+.banner-menu input,select,option{
     width: 80px;
     border-radius: 8px;
     background: #FFF;
     border: 0px;
     padding: 16px 50px 16px 16px;
+}
+#select{
+    width: 150px;
 }
 .banner-menu .btn-primary {
     border-radius: 8px;
@@ -156,5 +159,8 @@ nav li {
     }
     .banner-menu input{
         width: 180px;
+    }
+    #select{
+        width: 240px;
     }
 }
