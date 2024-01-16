@@ -53,10 +53,10 @@ nav li {
 
 nav .burger {
     display: none;
-    position: static;
+    /* position: static; */
     cursor: pointer;
-    left: 86%;
-    top: 47px;
+    /* left: 86%; */
+    /* top: 47px; */
 }
 
 .burger .line {
@@ -201,6 +201,82 @@ section {
     margin-top: 24px;
 }
 
+/* third seeection styling */
+.choosing {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.choosing-title {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.choosing-description {
+    color: rgba(19, 19, 24, 0.70);
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+    width: 573px;
+    height: 315px;
+}
+
+.card-1 {
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(104, 99, 251, 0.05);
+    margin-right: 24px;
+}
+
+.card-2 {
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.card-3 {
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    position: relative;
+    left: 50%;
+    margin-top: 24px;
+}
+
+.card-img {
+    margin: 32px;
+}
+
+.card-title {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 24px;
+    font-weight: 800;
+    margin-left: 32px;
+    margin-bottom: 16px;
+}
+
+.card-description {
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-left: 32px;
+    margin-bottom: 32px;
+    margin-right: 55px;
+}
 
 
 /* mobile responsive */
@@ -218,9 +294,15 @@ section {
         overflow-x: hidden;
     }
 
+    nav {
+        position: relative;
+    }
+
     nav .burger {
         display: block;
-        position: fixed;
+        position: absolute;
+        right: 6%;
+        bottom: 33%;
     }
 
     .v-class {
@@ -289,5 +371,58 @@ section {
         overflow-x: hidden;
         border-top-right-radius: 16px;
         border-bottom-right-radius: 20px;
+    }
+
+    .second-section {
+        margin: 20px 24px;
+    }
+
+    .choose-destination-title {
+        font-size: 20px;
+    }
+
+    .choose-destination-description {
+        font-size: 14px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        object-fit: cover;
+    }
+
+    .row img {
+        width: 380px;
+        height: 200px;
+    }
+
+    .third-section {
+        margin: 20px 24px;
+    }
+
+    .choosing-title {
+        font-size: 20px;
+    }
+
+    .choosing-description {
+        font-size: 14px;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card {
+        width: 340px;
+        height: 400px;
+    }
+    .card-2{
+        margin-top: 16px;
+    }
+    .card-3 {
+        position: relative;
+        left: 0px;
+        margin-top: 16px;
     }
 }
