@@ -1,5 +1,6 @@
 /* shared style */
-body {
+body header,
+main {
     max-width: 1170px;
 }
 
@@ -278,6 +279,140 @@ section {
     margin-right: 55px;
 }
 
+/* fifth section styling */
+.fifth-section {
+    display: flex;
+}
+
+.perfect-place {
+    margin-right: 112px;
+}
+
+.perfect-place-title {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 60px;
+}
+
+.perfect-place-description {
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 16px;
+}
+
+.perfect-place-menu li {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-top: 16px;
+}
+
+.perfect-place .btn-primary {
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    border: 0px;
+    padding: 14px 42px;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+/* sixth section styling */
+.sixth-section {
+    display: flex;
+}
+
+.form-container {
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    margin-right: 24px;
+}
+
+.form-container hr {
+    margin-bottom: 24px;
+}
+
+.form-title {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.form-description {
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 24px;
+}
+
+.form-container input {
+    width: 393px;
+    height: 52px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    margin-bottom: 22px;
+    border: 0px;
+    text-align: center;
+}
+
+.form-container .btn-primary {
+    width: 393px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FF5400;
+    border: 0px;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.form-img .btn-primary {
+    width: 324px;
+    height: 120px;
+    transform: rotate(-19.628deg);
+    border-radius: 16px;
+    background: #FF5400;
+    border: 0px;
+    position: absolute;
+    left: 341px;
+    bottom: 52px;
+}
+
+.form-img h6 {
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.form-img h4 {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.form-img {
+    position: relative;
+}
 
 /* mobile responsive */
 @media screen and (max-width: 600px) {
@@ -417,12 +552,88 @@ section {
         width: 340px;
         height: 400px;
     }
-    .card-2{
+
+    .card-2 {
         margin-top: 16px;
     }
+
     .card-3 {
         position: relative;
         left: 0px;
         margin-top: 16px;
+    }
+
+    .fifth-section {
+        margin: 0px 24px;
+        flex-direction: column;
+    }
+
+    .perfect-place {
+        text-align: center;
+        margin: 0px 20px;
+    }
+
+    .perfect-place-title {
+        font-size: 26px;
+        margin: 0px;
+    }
+
+    .perfect-place-description {
+        font-size: 14px;
+        margin-top: 16px;
+    }
+
+    .perfect-place .btn-primary {
+        margin-bottom: 20px;
+    }
+
+    .perfect-place-img {
+        margin: 20px 0px;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .sixth-section {
+        flex-direction: column;
+        margin: 0px 24px;
+    }
+
+    .form-container {
+        width: 335px;
+        height: 353px;
+        margin-bottom: 24px;
+    }
+
+    .form-container input {
+        width: 288px;
+    }
+
+    .form-container .btn-primary {
+        width: 288px;
+    }
+
+    .form-img {
+        margin: 20px 0px;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 20px;
+    }
+    .form-img h6 {
+        font-size: 15.854px;
+    }
+    .form-img h4 {
+        font-size: 21.138px;
+    }
+    .form-img .btn-primary {
+        width: 214.023px;
+        height: 79.268px;
+        position: absolute;
+        left: 190px;
+        bottom: 40px;
     }
 }
