@@ -756,9 +756,12 @@ line-height: 124.5%;
     }
 
     .fourth-section {
-        margin: 0px 24px;
+        margin: 0px 10px;
     }
-
+    .booking{
+        padding: 0px;
+        margin: 0px 10px;
+    }
     .booking-title {
         font-size: 40px;
         margin-top: 20px;
