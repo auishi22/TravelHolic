@@ -569,6 +569,90 @@ footer hr {
     margin-top: 40px;
 }
 
+/* last section styling */
+.deals {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.deal-title {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 24px;
+    margin-left: 50px;
+}
+
+.deals-description {
+    color: rgba(19, 19, 24, 0.70);
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-left: 50px;
+}
+
+.deal-card-title {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.deal-card-description {
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 24px;
+}
+
+.card-price {
+    color: #FF5400;
+    font-family: Mulish;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.deal-cards .btn-primary {
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    border: 0px;
+    padding: 14px 25px;
+    font-family: Mulish;
+    font-size: 20px;
+    font-weight: 800;
+}
+.deal-card-1,.deal-card-2,.deal-card-3{
+    background-image: url(../Images/Rectangle\ 12.png);
+    width: 1170px;
+    height: 500px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.card-card-1,.card-card-2,.card-card-3{
+    width: 579px;
+    height: 260px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(245, 241, 241, 0.8);
+    backdrop-filter: blur(2.5px);
+    padding: 50px;
+    position: absolute;
+    top: 50px;
+    right: 100px; 
+}
+.deal-card-2{
+    transform: scaleX(-1);
+}
+.card-card-2{
+    transform: scaleX(-1);
+}
 /* mobile responsive */
 @media screen and (max-width: 600px) {
     * {
@@ -681,46 +765,54 @@ footer hr {
         flex-direction: column;
         object-fit: cover;
     }
+
     .row img {
         width: 380px;
         height: 200px;
     }
-    .row .text-1{
+
+    .row .text-1 {
         position: absolute;
         top: 19%;
         left: 35%;
     }
-    .row .text-2{
+
+    .row .text-2 {
         position: absolute;
         bottom: 21%;
         left: 26%;
     }
-    .row .text-3{
+
+    .row .text-3 {
         position: absolute;
         top: 13%;
         left: 34%;
     }
-    .row .text-4{
+
+    .row .text-4 {
         position: absolute;
         bottom: 47%;
         left: 24%;
     }
-    .row .text-5{
+
+    .row .text-5 {
         position: absolute;
         bottom: 13%;
         left: 16%;
     }
-    .row .text-6{
+
+    .row .text-6 {
         position: absolute;
         top: 19%;
         left: 30%;
     }
-    .row .text-7{
+
+    .row .text-7 {
         position: absolute;
         bottom: 19%;
         left: 29%;
     }
-   
+
 
     .third-section {
         margin: 20px 24px;
@@ -867,5 +959,45 @@ footer hr {
     .steps-3 {
         margin-top: 40px;
     }
-
+    .last-section{
+        margin: 0px 24px;
+    }
+    .deals{
+        margin: 0px 24px;
+    }
+    .deal-card-1,.deal-card-2,.deal-card-3{
+        background-image: url(../Images/Rectangle\ 12.png);
+        width: 366px;
+        height: 500px;
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 20px;
+    }
+    .card-card-1,.card-card-2,.card-card-3{
+    width: 241px;
+    height: 293px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(245, 241, 241, 0.8);
+    backdrop-filter: blur(2.5px);
+    padding: 37px;
+    position: absolute;
+    top: 121px;
+    right: 22px;
+    }
+    .deal-title,.deals-description{
+        margin-left: 0px;
+    }
+    .deal-card-title,.deal-card-description, .card-price{
+        margin-bottom: 10px;
+    }
+    
+    .deal-cards .btn-primary {
+        border: 0px;
+        padding: 12px;
+        font-size: 15px;
+        font-weight: 700;
+    }
 }
