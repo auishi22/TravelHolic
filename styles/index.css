@@ -676,15 +676,51 @@ footer hr {
     }
 
     .row {
+        position: relative;
         display: flex;
         flex-direction: column;
         object-fit: cover;
     }
-
     .row img {
         width: 380px;
         height: 200px;
     }
+    .row .text-1{
+        position: absolute;
+        top: 19%;
+        left: 35%;
+    }
+    .row .text-2{
+        position: absolute;
+        bottom: 21%;
+        left: 26%;
+    }
+    .row .text-3{
+        position: absolute;
+        top: 13%;
+        left: 34%;
+    }
+    .row .text-4{
+        position: absolute;
+        bottom: 47%;
+        left: 24%;
+    }
+    .row .text-5{
+        position: absolute;
+        bottom: 13%;
+        left: 16%;
+    }
+    .row .text-6{
+        position: absolute;
+        top: 19%;
+        left: 30%;
+    }
+    .row .text-7{
+        position: absolute;
+        bottom: 19%;
+        left: 29%;
+    }
+   
 
     .third-section {
         margin: 20px 24px;
